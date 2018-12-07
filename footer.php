@@ -25,5 +25,12 @@
     ga('send', 'pageview');
     </script>
 
+    <!-- Mobile Menu Trigger -->
+    <script type="text/javascript">
+      $("#trigger").click(function(){
+       $("#app-navigation").toggleClass("magic");
+      });
+    </script>
+
   </body>
 </html>

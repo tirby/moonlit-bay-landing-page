@@ -1,0 +1,44 @@
+.app-section,
+.content-wrap,
+.footer-content,
+.header-content,
+.row,
+.section-content {
+
+  &.one-column {
+    max-width: 25%;
+  }
+
+  &.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  &.two-column {
+    @include has-columns(2, 50px);
+
+    &.left-sidebar {
+      @include has-columns(2, 80px);
+    }
+  }
+
+  &.three-column {
+    @include has-columns(3, 50px);
+  }
+
+  &.four-column {
+    @include has-columns(4, 35px);
+  }
+
+  &.five-column {
+    @include has-columns(5, 25px);
+  }
+
+  &.six-column {
+    @include has-columns(6, 20px);
+  }
+
+  // Mobile Styles
+  @media (max-width: $mobile-breakpoint) {}
+}

@@ -46,7 +46,7 @@ function codelation_nav()
   wp_nav_menu(
   array(
     'theme_location'  => 'header-menu',
-    'menu'            => '',
+    'menu'            => 'Primary Menu',
     'container'       => 'div',
     'container_class' => 'menu-{menu slug}-container',
     'container_id'    => '',
@@ -296,7 +296,6 @@ add_action('wp_print_scripts', 'codelation_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'codelation_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'codelation_pagination'); // Add our HTML5 Pagination
 
@@ -334,10 +333,5 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
-
-// Shortcodes
-add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
-add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
-
 
 ?>

@@ -1,0 +1,6 @@
+body {
+  background-color: $body-background-color;
+
+  // Mobile Styles
+  @media (max-width: $mobile-breakpoint) {}
+}

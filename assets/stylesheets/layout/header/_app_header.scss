@@ -1,0 +1,33 @@
+.app-header {
+  background-color: $white;
+  box-shadow: 0 0 15px rgba($black, 0.25);
+  padding-bottom: $mobile-padding;
+  padding-top: $mobile-padding;
+  position: relative;
+
+  .header-content {
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .trigger {
+    display: none;
+  }
+
+  // Mobile Styles
+  @media (max-width: $mobile-breakpoint) {
+
+    .header-content {
+
+      .app-branding {
+        margin-bottom: 0;
+      }
+    }
+
+    .trigger {
+      @include display(flex);
+    }
+  }
+}
