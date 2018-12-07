@@ -1,0 +1,13 @@
+/*!
+ Theme Name: Codelation Default
+ Author: Codelation
+ Author URI: https://codelation.com/
+ Description: The base Codelation WordPress Theme.
+ Version: 1.1
+*/
+
+@import "../vendor/codelation/**/*";
+@import "variables";
+@import "normalize";
+@import "layout/**/*";
+@import "views/**/*";
