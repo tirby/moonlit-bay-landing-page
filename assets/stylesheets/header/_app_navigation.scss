@@ -1,0 +1,52 @@
+// Align Menu Items Right by Default
+.app-navigation {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(flex-end);
+  @include transition(all 0.5s ease-in-out);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // Align Menu Items Left
+  &.justify-start {
+    @include justify-content(flex-start);
+  }
+
+  // Align Menu Items Center
+  &.justify-center {
+    @include justify-content(center);
+  }
+
+  // Mobile Styles
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+    opacity: 0;
+    padding-top: $mobile-padding;
+
+    ul {
+      text-align: center;
+      width: 100%;
+
+      li {
+
+        a {
+          display: block;
+          padding: $mobile-padding;
+
+          &:hover {
+            background-color: color($grey, 50);
+          }
+        }
+      }
+    }
+
+    &.magic {
+      @include display(flex);
+      opacity: 1;
+    }
+  }
+}

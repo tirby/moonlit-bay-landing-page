@@ -1,0 +1,74 @@
+$link-color:        $accent-color;
+$link-color-active: color($accent-color, 800);
+$link-color-hover:  color($accent-color, 700);
+
+a {
+  @include transition(all 0.2s ease-in-out);
+  color: $link-color;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:active {
+    color: $link-color-active;
+  }
+
+  &.nav-item {
+    color: $white;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.7;
+    padding-left: $element-spacing / 6;
+    padding-right: $element-spacing / 6;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+
+    &::after {
+      @include transition(all 0.2s ease-in-out);
+      background-color: $accent-color;
+      bottom: 0;
+      content: "";
+      height: 2px;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      right: 0;
+      width: 0;
+    }
+
+    &.dark {
+      color: $primary-color;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &.cta-nav-item {
+      background-color: $accent-color;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba($accent-color, 0.0);
+      color: $primary-color;
+      opacity: 1;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        background-color: darken($accent-color, 20%);
+        border-color: transparent;
+        box-shadow: 0 0 10px rgba($accent-color, 0.5);
+        color: $white;
+      }
+    }
+  }
+}

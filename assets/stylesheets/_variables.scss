@@ -3,7 +3,7 @@
 $max-width:             1200px;
 $mobile-breakpoint:     767px;
 $mobile-padding:        12px;
-$section-spacing:       100px;
+$element-spacing:       $mobile-padding * 8; // 96px
 $tablet-breakpoint:     1024px;
 $transition-timing:     cubic-bezier(0.25, 0.8, 0.25, 1);
 
@@ -22,6 +22,6 @@ $ui-border-color:       #eee;
 $default-ui-color:      $accent-color; // used in the codelation_ui components
 
 // Application Typography
-$body-font-family:      sans-serif;
-$heading-font-family:   sans-serif;
+$body-font-family:      'Roboto', sans-serif;
+$heading-font-family:   'Roboto Condensed', sans-serif;
 $serif-font:            serif;
