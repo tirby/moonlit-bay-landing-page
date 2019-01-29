@@ -1,0 +1,14 @@
+.application-location-map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 456px; // This is the aspect ratio
+  position: relative;
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

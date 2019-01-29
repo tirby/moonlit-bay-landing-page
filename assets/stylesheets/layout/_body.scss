@@ -1,6 +1,9 @@
 body {
   background-color: $body-background-color;
-
-  // Mobile Styles
-  @media (max-width: $mobile-breakpoint) {}
+  color: $body-color;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: $body-line-height;
+  text-rendering: optimizelegibility;
 }

@@ -1,0 +1,13 @@
+.application-header {
+  @include display(flex);
+  @include justify-content(center);
+  height: 183px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  position: relative;
+  z-index: 9;
+
+  @media (max-width: $mobile-breakpoint) {
+
+  }
+}

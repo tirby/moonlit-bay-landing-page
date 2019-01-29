@@ -1,0 +1,37 @@
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+  @include button();
+  @include transition(all 0.2s ease-in-out);
+  background: none;
+  background-color: $accent-color;
+  border: 4px;
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  height: 39px;
+  line-height: 39px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: none;
+    background-color: darken($accent-color, 10%);
+    box-shadow: 0 0 10px $primary-color;
+    color: $white;
+  }
+
+  &.inverted {
+    background-color: transparent;
+    border: 2px solid $accent-color;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+      box-shadow: 0 0 10px $primary-color;
+    }
+  }
+}

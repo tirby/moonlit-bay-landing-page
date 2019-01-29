@@ -1,0 +1,14 @@
+.application-branding {
+  max-width: 225px;
+
+  img,
+  svg {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+
+  }
+}

@@ -1,12 +1,24 @@
       <!-- footer -->
-      <footer class="footer" role="contentinfo">
+      <footer class="application-footer">
+        <div class="section-content two-column">
 
-        <!-- copyright -->
-        <p class="copyright">
-          &copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-        </p>
-        <!-- /copyright -->
+          <!-- Column -->
+          <div class="column copyright">
+            <span>© Copyright 2018 Moonlit Bay RV Sites</span>
+          </div>
 
+          <!-- Column -->
+          <nav class="application-nav column ">
+            <span>
+              <i class="fas fa-location-arrow"></i>
+              <span>9078 36th St. NE, Warwick, ND  58381</span>
+            </span>
+            <a href="https://www.facebook.com/moonlitbay/" target="_blank" class="footer-text-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </nav>
+
+        </div>
       </footer>
       <!-- /footer -->
 
@@ -14,23 +26,6 @@
     <!-- /wrapper -->
 
     <?php wp_footer(); ?>
-
-    <!-- analytics -->
-    <script>
-    (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-    (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-    l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-    ga('send', 'pageview');
-    </script>
-
-    <!-- Mobile Menu Trigger -->
-    <script type="text/javascript">
-      $("#trigger").click(function(){
-       $("#app-navigation").toggleClass("magic");
-      });
-    </script>
 
   </body>
 </html>

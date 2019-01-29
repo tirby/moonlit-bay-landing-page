@@ -1,27 +1,18 @@
+// Global variables
+$max-width: 1280px;
+$mobile-breakpoint: 767px;
+$transition-timing: cubic-bezier(0.25, 0.8, 0.25, 1);
 
-// Layout
-$max-width:             1200px;
-$mobile-breakpoint:     767px;
-$mobile-padding:        12px;
-$element-spacing:       $mobile-padding * 8; // 96px
-$tablet-breakpoint:     1024px;
-$transition-timing:     cubic-bezier(0.25, 0.8, 0.25, 1);
-
-// Application Colors
-
-$accent-color:          #72cc20;
+// Colors
+$accent-color:          #71c69d;
 $body-background-color: #fafafa;
-$body-color:            #222;
-$primary-color:         #860c9c;
-$icon-color:            #9b9b9b;
-$link-color:            $accent-color;
-$link-color-highlight:  #fffd75;
-$link-color-hover:      lighten($link-color, 5%);
-$link-color-active:     $link-color-hover;
-$ui-border-color:       #eee;
+$body-color:            #4a4a4a;
+$primary-color:         #192857;
 $default-ui-color:      $accent-color; // used in the codelation_ui components
+$ui-border-color:       #eee;
+$ui-icon-idle-color:    #c4c4c4;
 
 // Application Typography
-$body-font-family:      'Roboto', sans-serif;
-$heading-font-family:   'Roboto Condensed', sans-serif;
-$serif-font:            serif;
+$body-font-family:      'Open Sans', arial, sans-serif;
+$body-font-size:        16px;
+$body-line-height:      1.6875;

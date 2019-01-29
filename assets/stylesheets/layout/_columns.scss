@@ -1,44 +1,56 @@
-.app-section,
-.content-wrap,
-.footer-content,
-.header-content,
-.row,
-.section-content {
+.section-content,
+.application-form,
+.form-row {
 
   &.one-column {
-    max-width: 25%;
-  }
-
-  &.centered {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    max-width: 620px;
   }
 
   &.two-column {
-    @include has-columns(2, 50px);
+    @include has-columns(2, 24px);
+  }
 
-    &.left-sidebar {
-      @include has-columns(2, 80px);
-    }
+  &.two-column-wide {
+    @include has-columns(2, 48px);
   }
 
   &.three-column {
-    @include has-columns(3, 50px);
+    @include has-columns(3, 24px);
   }
 
   &.four-column {
-    @include has-columns(4, 35px);
+    @include has-columns(4, 24px);
   }
 
   &.five-column {
-    @include has-columns(5, 25px);
+    @include has-columns(5, 24px);
   }
 
   &.six-column {
-    @include has-columns(6, 20px);
+    @include has-columns(6, 24px);
   }
 
-  // Mobile Styles
-  @media (max-width: $mobile-breakpoint) {}
+  &.seven-column {
+    @include has-columns(7, 24px);
+  }
+
+  &.eight-column {
+    @include has-columns(8, 24px);
+  }
+
+  &.nine-column {
+    @include has-columns(9, 24px);
+  }
+
+  &.ten-column {
+    @include has-columns(10, 24px);
+  }
+
+  &.eleven-column {
+    @include has-columns(11, 24px);
+  }
+
+  &.twelve-column {
+    @include has-columns(12, 24px);
+  }
 }

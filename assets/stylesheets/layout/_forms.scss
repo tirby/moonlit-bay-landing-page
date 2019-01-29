@@ -1,0 +1,122 @@
+$form-secondary-body-color: #9d9d9d;
+
+.application-form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 620px;
+
+  &.one-column {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+
+  form,
+  .form {
+
+    .form-header {
+      @include has-columns(2, 10px);
+      border-bottom: 1px solid $ui-border-color;
+      line-height: 1;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+
+      .form-title {
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .form-icon {
+        @include align-items(center);
+        @include display(flex);
+        @include justify-content(flex-end);
+        color: $ui-icon-idle-color;
+        font-size: 18px;
+      }
+    }
+
+    .form-summary {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 28px;
+
+      .directions {
+        font-weight: 300;
+        opacity: 0.6;
+      }
+    }
+
+    .form-body {
+      margin-bottom: 30px;
+    }
+
+    .form-row {
+      margin-bottom: 10px;
+
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        @include transition(all 0.2s ease-in-out);
+        background: none;
+        background-color: $white;
+        border: 0;
+        border-radius: 4px;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+
+        &::placeholder {
+          @include transition(all 0.4s ease-in-out);
+          opacity: 0.7;
+        }
+
+        &:focus {
+          border-color: $primary-color;
+
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .form-footer {
+
+      .actions {
+        padding-top: 20px;
+
+        button {
+          font-size: 24px;
+          font-weight: 400;
+          padding-left: 30px;
+          padding-right: 30px;
+          text-transform: none;
+
+          &:hover {
+            background-color: darken($primary-color, 5%);
+          }
+        }
+      }
+
+      .form-help {
+        color: $form-secondary-body-color;
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 15px;
+
+        a {
+          color: $form-secondary-body-color;
+
+          &:hover {
+            color: $black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
