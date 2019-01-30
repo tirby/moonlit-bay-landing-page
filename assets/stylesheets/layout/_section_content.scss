@@ -1,4 +1,5 @@
-.section-content {
+.section-content,
+.gutenberg-section {
   @include outer-container;
   position: relative;
   z-index: 9;
